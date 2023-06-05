@@ -59,12 +59,48 @@ fn main() {
     // println!("5/4 = {}", num_3 / num_4);
     // println!("5%4 = {}", num_3 % num_4);
 
-    let random_num: i32 = rand::thread_rng().gen_range(1022516..103151511);
-    let random_num_2: u64 = rand::thread_rng().gen(); //same as writing "let random_num_2: u64 = rand::thread_rng().gen::<u64>();"
-                                                      // let random_num_2: u64 = rand::thread_rng().gen::<u32>().into(); //randoming and typecasting
-    println!("Random number 32: {}", random_num); // (Range 1..101 means 1 to 100)
-    println!("Random number 64: {}", random_num_2);
+    // Random Numbers
+    // let random_num: i32 = rand::thread_rng().gen_range(1022516..103151511);
+    // let random_num_2: u64 = rand::thread_rng().gen(); //same as writing "let random_num_2: u64 = rand::thread_rng().gen::<u64>();"
+    //                                                   // let random_num_2: u64 = rand::thread_rng().gen::<u32>().into(); //randoming and typecasting
+    // println!("Random number 32: {}", random_num); // (Range 1..101 means 1 to 100)
+    // println!("Random number 64: {}", random_num_2);
 
-    let random_num_128: u128 = rand::thread_rng().gen();
-    println!("Random number 128: {}", random_num_128);
+    // let random_num_128: u128 = rand::thread_rng().gen();
+    // println!("Random number 128: {}", random_num_128);
+
+    //------------------
+    // Conditionals
+
+    // let age: i32 = 8;
+    // let mut age: String = String::new();
+    // println!("Enter your age");
+    // io::stdin().read_line(&mut age).expect("Input failed");
+    // // println!("Your age is {}", age);
+    // let age: i32 = age.trim().parse().unwrap(); // trimming is important when taken input from stdin .trim()
+    // if (age >= 1) && (age <= 18) {
+    //     println!("Important Birthday {}", age);
+    // } else if (age == 21) || (age == 50) {
+    //     println!("Important Birthday {}", age);
+    // } else if (age >= 65) {
+    //     println!("Important Birthday {}", age);
+    // } else {
+    //     println!("Not an important Birthday {}", age);
+    // }
+
+    // leet code problem
+    // let name: String = "my name is man2k".to_string();
+    // let mut word: String = String::new();
+    // let rname: String = name.chars().rfind().rev().collect::<String>();
+    // rname.matches(pat)
+    // for n in rname.chars() {
+    //     word.push(n);
+    //     if (n == ' ') {
+    //         break;
+    //     }
+    // }
+    // let name: String = word.chars().rev().collect::<String>();
+
+    // println!("{}", name);
+    // println!("Your name is {}", name.chars().rev().collect::<String>());
 }
