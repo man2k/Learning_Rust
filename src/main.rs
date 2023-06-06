@@ -103,4 +103,66 @@ fn main() {
 
     // println!("{}", name);
     // println!("Your name is {}", name.chars().rev().collect::<String>());
+
+    // Ternary operator
+    // let mut my_age = 47;
+    // let can_vote: bool = if my_age >= 18 { true } else { false }; // equivalent to ternary
+    // println!("Can vote: {}", can_vote);
+
+    // let age2: i32 = 8;
+    // match age2 {
+    //     1..=18 => println!("Important Birthday"), // 1 to and equal to 18
+    //     21 | 50 => println!("Important Birthday"), // 21 or 50
+    //     65..=i32::MAX => println!("Important Birthday"), // 65 to i32 max
+    //     _ => println!("Not Important Birthday"), // everything else
+    // };
+
+    // let my_age: i32 = 18;
+    // const VOTING_AGE: i32 = 18;
+    // match my_age.cmp(&VOTING_AGE) {
+    //     Ordering::Less => println!("Can't vote"),
+    //     Ordering::Greater => println!("Can vote"),
+    //     Ordering::Equal => println!("You gained the right to vote"),
+    // };
+
+    // ARRAYS
+
+    // let arr_1: [i32; 9] = [1, 2, 3, 4, 5, 6, 7, 8, 9]; // declaring arrays
+    // println!("1st : {}", arr_1[0]);
+    // println!("Length : {}", arr_1.len());
+
+    //Looping over arrays
+    // let arr_2: [i32; 9] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    // let mut loop_idx: usize = 0;
+
+    // loop method
+    // loop {
+    //     if arr_2[loop_idx] % 2 == 0 {
+    //         loop_idx += 1;
+    //         continue;
+    //     }
+    //     if arr_2[loop_idx] == 9 {
+    //         break;
+    //     }
+    //     println!("Val : {}", arr_2[loop_idx]);
+    //     loop_idx += 1;
+    // }
+
+    // while loop
+    // while loop_idx < arr_2.len() {
+    //     println!("Array : {}", arr_2[loop_idx]);
+    //     loop_idx += 1;
+    // }
+
+    // for loop
+    // for val in arr_2.iter() {
+    //     println!("Val : {}", val);
+    // }
+
+    // TUPLE:  can store multiple data types
+    // let my_tuple: (u8, String, f64) = (99, "Man2k".to_string(), 50_000.00);
+
+    // println!("Name : {}", my_tuple.1); // ref to index
+    // let (v1, v2, v3) = my_tuple; // like destructuring in js
+    // println!("age : {}", v1);
 }
